@@ -8,20 +8,20 @@ const Footer = () => {
         <div className="text-center flex flex-col justify-center">
           <h1 className="text-3xl">Welcome to work manager</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ab!
+            Manage your work(tasks) status and update
           </p>
         </div>
         <div className="text-center">
           <h1>Important Links</h1>
           <ul>
             <li>
-              <a href="#!">Facebook</a>
+              <a href="/https://www.facebook.com/">Facebook</a>
             </li>
             <li>
-              <a href="#!">YouTube</a>
+              <a href="/https://www.youtube.com/">YouTube</a>
             </li>
             <li>
-              <a href="#!">Instagram</a>
+              <a href="/https://www.instagram.com/">Instagram</a>
             </li>
           </ul>
         </div>
