@@ -1,14 +1,14 @@
 import { User } from "@/models/user";
 import { NextResponse } from "next/server";
-
+import { connectDb } from "@/helper/db";
 // export const GET=()=>{
 
 // }
 
 // get user
 export async function GET(request, { params }) {
+  await connectDb();
   const { userId } = params;
-  // const user = await User.findById(userId).select("-password");
   const user = await User.findById(userId).select("-password");
   return NextResponse.json(user);
 }

@@ -2,12 +2,14 @@
 import { Task } from "@/models/task";
 import { NextResponse } from "next/server";
 import { getResponseMessage } from "@/helper/responceMessage";
+import { connectDb } from "@/helper/db";
 
 // get single tasks
 export async function GET(request, { params }) {
   const { taskId } = params;
 
   try {
+    await connectDb();
     const task = await Task.findById(taskId);
     return NextResponse.json(task);
   } catch (error) {
@@ -26,6 +28,7 @@ export async function PUT(request, { params }) {
 
     (task.title = title), (task.content = content), (task.status = status);
     // ...
+    await connectDb();
     const updatedTask = await task.save();
     return NextResponse.json(updatedTask);
   } catch (error) {
@@ -37,7 +40,7 @@ export async function PUT(request, { params }) {
 export async function DELETE(request, { params }) {
   try {
     const { taskId } = params;
-
+    await connectDb();
     await Task.deleteOne({
       _id: taskId,
     });

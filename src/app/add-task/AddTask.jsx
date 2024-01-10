@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import loginSvg from "../../assets/login.svg";
 import Image from "next/image";
 import { addTask } from "@/services/taskService";
-import { taost, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const AddTask = () => {
   // console.log("this is add task component");
@@ -13,8 +13,8 @@ const AddTask = () => {
     content: "",
     status: "none",
     // temp solution
-    userId: "64a506ab413f1d5bcafcdbec",
-  });
+    userId: "659aebe6d31a36fc016ac5ac",
+  }); 
 
   const handleAddTask = async (event) => {
     event.preventDefault();
