@@ -35,7 +35,7 @@ const CustomNavbar = () => {
           {context.user && (
             <>
               <li>
-                <Link href={"/"} className="  mt-3 flex hover:text-blue-200 ">
+                <Link href={"/"} className=" hover:text-blue-200 ">
                   Home
                 </Link>
               </li>
