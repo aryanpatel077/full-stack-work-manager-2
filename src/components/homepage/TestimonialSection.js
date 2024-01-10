@@ -8,44 +8,44 @@ const testimonials = [
   {
     id: 1,
     name: "John Doe",
-    designation: "CEO, ABC Inc.",
+    designation: " CEO : Good felow Finance ",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lobortis justo. Proin mollis scelerisque ex.",
+      "Employees rise to thier level of incomptence ",
   },
   {
     id: 2,
     name: "Jane Smith",
-    designation: "Manager, XYZ Corp.",
+    designation: " CEO : NSW Film and TV office ",
     message:
-      "Fusce volutpat tortor sit amet massa sagittis, ac iaculis odio congue. Nam maximus vestibulum lorem.",
+      "Somethings are worth getting your heart broken for ",
   },
   {
     id: 3,
-    name: "Michael Johnson",
-    designation: "CTO, PQR Ltd.",
+    name: "Mr. John Son",
+    designation: " CTO, PQR Ltd. ",
     message:
-      "Nullam non mauris nec arcu posuere fermentum. Aliquam id orci vel elit accumsan gravida.",
+      "On success, strenth, power and motivation : The Rock",
+  },
+    {
+    id: 1,
+    name: "Sir John Doe",
+    designation: "CEO : Good felow Finance",
+    message:
+      "Employees rise to thier level of incomptence",
+  },
+  {
+    id: 2,
+    name: "Px Jane Smith",
+    designation: "CEO : NSW Film and TV office",
+    message:
+      "Somethings are worth getting your heart broken for",
   },
   {
     id: 3,
-    name: "Michael Johnson",
+    name: "John Son",
     designation: "CTO, PQR Ltd.",
     message:
-      "Nullam non mauris nec arcu posuere fermentum. Aliquam id orci vel elit accumsan gravida.",
-  },
-  {
-    id: 3,
-    name: "Michael Johnson",
-    designation: "CTO, PQR Ltd.",
-    message:
-      "Nullam non mauris nec arcu posuere fermentum. Aliquam id orci vel elit accumsan gravida.",
-  },
-  {
-    id: 3,
-    name: "Michael Johnson",
-    designation: "CTO, PQR Ltd.",
-    message:
-      "Nullam non mauris nec arcu posuere fermentum. Aliquam id orci vel elit accumsan gravida.",
+      "On success, strenth, power and motivation",
   },
   // Add more testimonials as needed
 ];
@@ -82,10 +82,10 @@ const TestimonialSection = () => {
 const TestimonialCard = ({ testimonial }) => {
   return (
     <div className="p-4">
-      <div className="bg-white rounded-lg shadow-md p-6">
+      <div className="bg-white rounded-lg shadow-md p-1">
         <p className="text-gray-700 mb-4">{testimonial.message}</p>
         <div className="flex items-center">
-          <div className="mr-4">
+          <div className="mr-2">
             <div className="h-12 w-12 rounded-full bg-blue-500 flex items-center justify-center text-white font-semibold">
               {testimonial.name.charAt(0)}
             </div>
