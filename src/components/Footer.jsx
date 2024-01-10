@@ -3,16 +3,16 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="h-40 bg-blue-600 mt-5">
-      <div className="flex p-5 justify-around">
+    <footer className="h-42 bg-blue-600 mt-5">
+      <div className="flex py-2 justify-around">
         <div className="text-center flex flex-col justify-center">
           <div>
             <h1 className="text-3xl">Welcome to work manager</h1>
-            <p>
+            <p className="font-sm">
               Manage your tasks status and update!
             </p>
           </div>
-          <div className="mt-5">Copyright © 2024 designed by Aryan Patel</div>
+          <div className="mt-2 font-sm">Copyright © 2024 designed by Aryan Patel</div>
 
         </div>
         <div className="text-center">

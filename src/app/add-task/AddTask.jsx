@@ -13,7 +13,7 @@ const AddTask = () => {
     content: "",
     status: "none",
     // temp solution
-    userId: "659aebe6d31a36fc016ac5ac",
+    userId: "",
   }); 
 
   const handleAddTask = async (event) => {

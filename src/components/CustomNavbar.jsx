@@ -26,12 +26,12 @@ const CustomNavbar = () => {
   return (
     <nav className="bg-blue-600 h-16 py-2 px-2 flex justify-between items-center">
       <div className="brand">
-        <h1 className="text-2xl font-semibold">
+        <h1 className="text-2xl font-sans">
           <a href="/">Task Manager</a>
         </h1>
       </div>
       <div>
-        <ul className="flex space-x-4">
+        <ul className="flex space-x-4 font-sans">
           {context.user && (
             <>
               <li>
@@ -53,16 +53,18 @@ const CustomNavbar = () => {
           )}
         </ul>
       </div>
-      <div>
-        <ul className="flex space-x-3 font-semibold">
+      <div className="font-sm font-sans">
+        <ul className="flex space-x-3 ">
           {context.user && (
             <>
-              <li>
-                <Link href={"#!"}>{context.user.name}</Link>
-              </li>
-              <li>
-                <button onClick={doLogout}>Logout</button>
-              </li>
+              <div className="flex">
+                <li>
+                  <Link href={"#!"}>{context.user.name}</Link>
+                </li>
+                <li className="flex items-center">
+                  <button onClick={doLogout}>Logout</button>
+                </li>
+              </div>
             </>
           )}
 

@@ -26,18 +26,18 @@ export function middleware(request) {
     // accessing secured route
     
     if (!authToken) {
-      // if (request.nextUrl.pathname.startsWith("/api")) {
-      //   return NextResponse.json(
-      //     {
-      //       message: "Access Denied !!",
-      //       success: false,
-      //     },
+      if (request.nextUrl.pathname.startsWith("/api")) {
+        return NextResponse.json(
+          {
+            message: "Access Denied !!",
+            success: false,
+          },
           
-      //     {
-      //       status: 401,
-      //     }
-      //   );
-      // }
+          {
+            status: 401,
+          }
+        );
+      }
 
       return NextResponse.redirect(new URL("/login", request.url));
     } else { 
