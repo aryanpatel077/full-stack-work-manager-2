@@ -24,10 +24,10 @@ const CustomNavbar = () => {
   }
 
   return (
-    <nav className="bg-blue-600 h-16 py-2 px-36 flex md:justify-between items-center">
+    <nav className="bg-blue-600 h-16 py-2 px-2 flex justify-between items-center">
       <div className="brand">
         <h1 className="text-2xl font-semibold">
-          <a href="/">Work Manager</a>
+          <a href="/">Task Manager</a>
         </h1>
       </div>
       <div>
@@ -54,7 +54,7 @@ const CustomNavbar = () => {
         </ul>
       </div>
       <div>
-        <ul className="flex space-x-3">
+        <ul className="flex space-x-3 font-semibold">
           {context.user && (
             <>
               <li>
