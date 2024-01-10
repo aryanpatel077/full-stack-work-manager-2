@@ -35,7 +35,7 @@ const CustomNavbar = () => {
           {context.user && (
             <>
               <li>
-                <Link href={"/"} className="hover:text-blue-200">
+                <Link href={"/"} className="  mt-3 flex hover:text-blue-200 ">
                   Home
                 </Link>
               </li>
@@ -54,10 +54,10 @@ const CustomNavbar = () => {
         </ul>
       </div>
       <div className="font-sm font-sans">
-        <ul className="flex space-x-3 ">
+        <ul>
           {context.user && (
             <>
-              <div className="flex">
+              <div className="flex space-x-6 ml-4">
                 <li>
                   <Link href={"#!"}>{context.user.name}</Link>
                 </li>
@@ -69,14 +69,16 @@ const CustomNavbar = () => {
           )}
 
           {!context.user && (
-            <>
-              <li>
-                <Link href="/login">Login</Link>
-              </li>
-              <li>
-                <Link href="/signup">Signup</Link>
-              </li>
-            </>
+            <div className="flex space-x-3 ">
+              <>
+                <li>
+                  <Link href="/login">Login</Link>
+                </li>
+                <li>
+                  <Link href="/signup">Signup</Link>
+                </li>
+              </>
+            </div>
           )}
         </ul>
       </div>
