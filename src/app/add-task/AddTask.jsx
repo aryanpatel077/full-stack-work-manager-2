@@ -133,9 +133,6 @@ const AddTask = () => {
             <button className="bg-blue-600 py-2 px-3 rounded-lg hover:bg-blue-800">
               Add Task{" "}
             </button>
-            <button className="bg-red-600 py-2 px-3 rounded-lg hover:bg-red-800 ms-3">
-              Clear
-            </button>
           </div>
 
           {/* {JSON.stringify(task)} */}

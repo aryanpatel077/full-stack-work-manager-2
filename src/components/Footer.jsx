@@ -3,20 +3,20 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="h-42 bg-blue-600 mt-5">
+    <footer className="h-42 w-screen bg-blue-600 mt-5">
       <div className="flex py-2 justify-around">
         <div className="text-center flex flex-col justify-center">
           <div>
-            <h1 className="text-3xl">Welcome to work manager</h1>
-            <p className="font-sm">
+            <h1 className="text-3xl">Welcome To Task Manager</h1>
+            <p className="font-sm font-light">
               Manage your tasks status and update!
             </p>
           </div>
-          <div className="mt-2 font-sm">Copyright © 2024 designed by Aryan Patel</div>
+          <div className="mt-2 font-sm font-sans">Copyright © 2024 designed by Aryan Patel</div>
 
         </div>
         <div className="text-center">
-          <h1>Developer Contect</h1>
+          <h1 className="font-semibold">Developer Contect</h1>
           <ul>
             <li>
               <a href="https://x.com/AryanPa67254968?t=Jg301gzMYZmboVd1MSLYQw&s=09">Twitter / X</a>
