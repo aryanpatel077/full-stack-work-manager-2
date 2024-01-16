@@ -67,7 +67,7 @@ const TestimonialSection = () => {
         <h2 className="text-3xl font-semibold text-center mb-8">
           Testimonials
         </h2>
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-full mx-auto">
           <Slider {...settings}>
             {testimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.id} testimonial={testimonial} />

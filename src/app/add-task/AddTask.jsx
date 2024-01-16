@@ -42,7 +42,7 @@ const AddTask = () => {
 
   return (
     <div className="grid grid-cols-12  justify-center">
-      <div className="col-span-4 col-start-5 p-5  shadow-sm">
+      <div className="col-span-4 col-start-5  shadow-sm">
         <div className="my-8 flex justify-center">
           <Image
             src={loginSvg}

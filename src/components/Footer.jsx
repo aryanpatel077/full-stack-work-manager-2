@@ -19,7 +19,7 @@ const Footer = () => {
           <h1>Developer Contect</h1>
           <ul>
             <li>
-              <a href="https://x.com/AryanPa67254968?t=Jg301gzMYZmboVd1MSLYQw&s=09">X</a>
+              <a href="https://x.com/AryanPa67254968?t=Jg301gzMYZmboVd1MSLYQw&s=09">Twitter / X</a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/aryan-patel-se">Linkedin</a>
