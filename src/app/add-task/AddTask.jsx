@@ -15,6 +15,13 @@ const AddTask = () => {
     // temp solution
     userId: "",
   }); 
+  const resetForm = () => {
+    setTask({
+      title: "",
+      content: "",
+
+    });
+  };
 
   const handleAddTask = async (event) => {
     event.preventDefault();
@@ -65,7 +72,7 @@ const AddTask = () => {
             </label>
             <input
               type="text"
-              className="w-full p-3 rounded-3xl bg-gray-800 focus:ring-gray-400-100 border border-gray-800"
+              className="w-full p-3 rounded-3xl bg-gray-800 text-white focus:ring-gray-400-100 border border-gray-800"
               id="task_title"
               name="task_title"
               onChange={(event) => {
@@ -86,7 +93,7 @@ const AddTask = () => {
               Content
             </label>
             <textarea
-              className="w-full p-3 rounded-3xl bg-gray-800 focus:ring-gray-400-100 border border-gray-800"
+              className="w-full p-3 rounded-3xl bg-gray-800 text-white focus:ring-gray-400-100 border border-gray-800"
               id="task_content"
               rows={5}
               name="task_content"
@@ -110,7 +117,7 @@ const AddTask = () => {
             </label>
             <select
               id="task_status"
-              className="w-full p-3 rounded-3xl bg-gray-800 focus:ring-gray-400-100 border border-gray-800"
+              className="w-full p-3 rounded-3xl bg-gray-800 text-white focus:ring-gray-400-100 border border-gray-800"
               name="task_status"
               onChange={(event) => {
                 setTask({
@@ -133,6 +140,13 @@ const AddTask = () => {
             <button className="bg-blue-600 py-2 px-3 rounded-lg hover:bg-blue-800">
               Add Task{" "}
             </button>
+            <button
+                onClick={resetForm}
+                type="button"
+                className="px-3 py-2 bg-orange-600 ms-3 rounded hover:bg-orange-400"
+              >
+                Reset
+              </button>
           </div>
 
           {/* {JSON.stringify(task)} */}

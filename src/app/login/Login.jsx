@@ -13,6 +13,17 @@ const Login = () => {
     password: "",
   });
 
+  const resetForm = () => {
+    setLoginData({
+      name: "",
+      email: "",
+      password: "",
+      about: "",
+      profileURL:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1K1evWjMTfR3IMBxQxXSGV2pTaO2rAP7EzIMB4u0YwxfFL4pJ269eff6sNvuxtjI7c4s",
+    });
+  };
+
   const loginFormSubmitted = async (event) => {
     event.preventDefault();
     console.log(loginData);
@@ -94,13 +105,20 @@ const Login = () => {
             />
           </div>
 
-          <div className="mt-3 text-center">
+          <div className="mt-3 text-center flex">
             <button
               type="submit"
               className="px-3 py-2 bg-green-500  rounded hover:bg-green-400"
             >
               Login
             </button>
+            <button
+                onClick={resetForm}
+                type="button"
+                className="px-3 py-2 bg-orange-600 ms-3 rounded hover:bg-orange-400"
+              >
+                Reset
+              </button>
           </div>
         </form>
       </div>

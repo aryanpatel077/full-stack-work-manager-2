@@ -81,11 +81,11 @@ const TestimonialSection = () => {
 
 const TestimonialCard = ({ testimonial }) => {
   return (
-    <div className="p-4">
-      <div className="bg-white rounded-lg shadow-md p-1">
+    <div className="m-2">
+      <div className="bg-white rounded-lg shadow-md p-2">
         <p className="text-gray-700 mb-4">{testimonial.message}</p>
-        <div className="flex items-center">
-          <div className="mr-2">
+        <div className="flex items-center ">
+          <div>
             <div className="h-12 w-12 rounded-full bg-blue-500 flex items-center justify-center text-white font-semibold">
               {testimonial.name.charAt(0)}
             </div>
