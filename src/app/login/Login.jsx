@@ -105,7 +105,7 @@ const Login = () => {
             />
           </div>
 
-          <div className="mt-3 text-center flex">
+          <div className="mt-3 flex justify-center">
             <button
               type="submit"
               className="px-3 py-2 bg-green-500  rounded hover:bg-green-400"
