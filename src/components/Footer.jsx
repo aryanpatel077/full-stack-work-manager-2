@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-indigo-800 text-white py-8 mt-10">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <p className="text-sm">
-          © {new Date().getFullYear()} BrandName. All rights reserved.
+          © {new Date().getFullYear()} Create by Aryan Patel. All rights reserved.
         </p>
         <div className="space-x-4 md:mt-0">
         <div className="flex items-center justify-center py-2 space-x-2 md:space-x-4 text-3xl">
