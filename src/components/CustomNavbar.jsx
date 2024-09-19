@@ -24,7 +24,7 @@ const CustomNavbar = () => {
   }
 
   return (
-    <nav className="bg-blue-600 h-16 w-screen py-2 px-2 flex justify-between items-center">
+    <nav className="bg-indigo-800 text-white h-16 w-screen py-2 px-2 flex justify-between items-center">
       <div className="brand">
         <h1 className="text-2xl font-sans">
           <a href="/">Task Manager</a>

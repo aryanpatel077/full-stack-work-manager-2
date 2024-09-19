@@ -4,7 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import { ToastContainer } from "react-toastify";
-import UserContext from "@/context/userContext";
 import UserProvider from "@/context/userProvider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,12 +11,13 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
         <UserProvider>
           <ToastContainer />
           <CustomNavbar />
-          <div className="mt-0">{children}</div>
-
+          <div className="flex-grow mt-20">
+            {children}
+          </div>
           <Footer />
         </UserProvider>
       </body>
